@@ -1,0 +1,20 @@
+{
+    "name": "gone-backend",
+    "version": "1.0.0",
+    "description": "Azure Functions backend for Gone - Year Progress Tracker",
+    "scripts": {
+        "start": "func start",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@azure/functions": "^4.0.0",
+        "mongodb": "^6.3.0",
+        "web-push": "^3.6.6"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
