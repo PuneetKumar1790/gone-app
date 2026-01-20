@@ -2,6 +2,29 @@
 
 A minimal web app that tracks the current year's progress and sends push notifications when each percent is completed. Built with React PWA frontend and Azure Functions serverless backend.
 
+## 📱 Installation
+
+**Install as a Progressive Web App (PWA) for the best experience:**
+
+### Android (Chrome/Edge)
+1. Visit **https://puneetk.dev** in Chrome or Edge
+2. Tap the **menu** (⋮) → **"Add to Home screen"** or **"Install app"**
+3. Tap **"Install"** or **"Add"**
+4. Open the app from your home screen
+5. Enable notifications when prompted
+
+### iOS (Safari)
+1. Visit **https://puneetk.dev** in Safari
+2. Tap the **Share** button (□↑)
+3. Scroll down and tap **"Add to Home Screen"**
+4. Tap **"Add"**
+5. Open the app from your home screen
+6. Enable notifications when prompted
+
+> **Note:** On iOS, notifications only work when the app is installed to the home screen (PWA mode), not in regular Safari.
+
+---
+
 ## 🎯 Core Concept
 
 Time passes irreversibly. This app tracks how much of the current year is already gone and notifies you only when another 1% is completed. No gamification, no social features—just cold, factual awareness.
