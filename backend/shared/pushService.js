@@ -27,8 +27,8 @@ async function sendPercentNotification(subscription, percent) {
     initializeWebPush();
 
     const payload = JSON.stringify({
-        title: `⏳ ${percent}% of the year is gone`,
-        body: 'Another chunk burned. Adjust course if needed.',
+        title: `⏳ ${percent}% of 2026 is GONE forever`,
+        body: `Time doesn't pause. What did you accomplish? ${100 - percent}% left.`,
         icon: '/icons/icon-192x192.png',
         badge: '/icons/badge-96x96.png',
         tag: `year-progress-${percent}`,
