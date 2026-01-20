@@ -317,10 +317,10 @@ Not accepting:
 - Motivational copy changes
 - Unnecessary complexity
 
+## � Why This Exists
+
+Got a random idea one day and decided to build it. Thought others might find it useful too.
+
 ## 📄 License
 
 MIT
-
-## 🙏 Acknowledgments
-
-Built with the understanding that **silence is a feature, not a bug**.
