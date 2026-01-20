@@ -6,8 +6,8 @@ A minimal web app that tracks the current year's progress and sends push notific
 
 **Install as a Progressive Web App (PWA) for the best experience:**
 
-### Android (Chrome/Edge)
-1. Visit **https://puneetk.dev** in Chrome or Edge
+### Android (Brave/Chrome)
+1. Visit **https://puneetk.dev** in Brave or Chrome
 2. Tap the **menu** (⋮) → **"Add to Home screen"** or **"Install app"**
 3. Tap **"Install"** or **"Add"**
 4. Open the app from your home screen
