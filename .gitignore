@@ -45,3 +45,10 @@ local.settings.json
 
 # OS
 Thumbs.db
+
+# Environment files with secrets
+.env
+.env.local
+.env.production
+backend/test-*.js
+backend/manual-*.js
