@@ -23,8 +23,12 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         env:
-          VITE_API_BASE_URL: https://gone-functions-pk-h4epfjhpgbhxb3d9.eastus-01.azurewebsites.net/api
+          VITE_API_BASE_URL: /api
           VITE_VAPID_PUBLIC_KEY: BAeomv5438e3Rn8z-z7j_wmhEgfoe-kaC4KetiEIQAVbT6Tnp-v664mAv5WMxIjlnbhS5D6dZ52khzumc-2jwEM
+          MONGODB_URI: mongodb+srv://puneetk49081_db_user:IE97cs8v4cTyVi6m@cluster0.zkqiwr0.mongodb.net/Gone?retryWrites=true&w=majority&appName=Cluster0
+          VAPID_PUBLIC_KEY: BAeomv5438e3Rn8z-z7j_wmhEgfoe-kaC4KetiEIQAVbT6Tnp-v664mAv5WMxIjlnbhS5D6dZ52khzumc-2jwEM
+          VAPID_PRIVATE_KEY: cEp6bVnlSI3LDkrSGsKUvF5vSdG1bi0yjkE3tcbxAIo
+          VAPID_SUBJECT: mailto:puneetk49081@gmail.com
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_RED_GROUND_010EE330F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
@@ -32,7 +36,7 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "./frontend" # App source code path
-          api_location: "" # Api source code path - optional
+          api_location: "./api" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
