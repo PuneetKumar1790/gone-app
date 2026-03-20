@@ -52,3 +52,9 @@ Thumbs.db
 .env.production
 backend/test-*.js
 backend/manual-*.js
+
+# Temporary files and archives
+*.zip
+*.tar.gz
+*.tar
+mongodb-atlas-cli*
