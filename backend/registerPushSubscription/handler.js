@@ -8,23 +8,8 @@ async function registerPushSubscription(request, context) {
   context.log("registerPushSubscription invoked");
 
   try {
-    // Parse request body
-    let body;
-    try {
-      body = await request.json();
-      context.log("Request body parsed successfully");
-    } catch (parseError) {
-      context.log("Failed to parse request body:", parseError);
-      return {
-        status: 400,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          error: "Invalid request",
-          message: "Failed to parse JSON body: " + parseError.message,
-        }),
-      };
-    }
-
+    // Get request body (v3 model has it as request.body)
+    const body = request.body || {};
     const { subscription, timezone } = body;
     context.log("Request data:", { hasSubscription: !!subscription, timezone });
 
